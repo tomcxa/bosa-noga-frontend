@@ -84,7 +84,7 @@ const Catalog = ({ children }) => {
       {children}
       <CatalogCategories categoryChange={categoryChange} />
       <CatalogCardList data={cards} loading={state.loading} error={state.error} retry={state.retry} />
-      {state.value || state.value?.length < 6 || state.error ? null : (
+      {state.value?.length < 6 || state.error ? null : (
         <div className="text-center">
           <button
             className="btn btn-outline-primary"
