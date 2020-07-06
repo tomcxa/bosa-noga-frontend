@@ -15,7 +15,7 @@ import GlobalProvider from "./contexts/GlobalProvider";
 function App() {
   return (
     <Router>
-      <Redirect from='/bosa-noga-frontend' to='/' ></Redirect>
+      <Redirect from='/bosa-noga-frontend' to='/' />
       <GlobalProvider>
         <Header />
         <Main>
