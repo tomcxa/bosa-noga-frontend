@@ -19,22 +19,22 @@ function App() {
         <Header />
         <Main>
           <Switch>
-            <Route path="bosa-noga-frontend/about">
+            <Route path="/about">
               <AboutPage />
             </Route>
-            <Route path="bosa-noga-frontend/product/:id">
+            <Route path="/product/:id">
               <ProductPage />
             </Route>
-            <Route path="bosa-noga-frontend/catalog">
+            <Route path="/catalog">
               <CatalogPage />
             </Route>
-            <Route path="bosa-noga-frontend/contacts">
+            <Route path="/contacts">
               <ContactsPage />
             </Route>
-            <Route path="bosa-noga-frontend/cart">
+            <Route path="/cart">
               <CartPage />
             </Route>
-            <Route exact path="bosa-noga-frontend/">
+            <Route exact path="/">
               <HomePage />
             </Route>
             <Route path="*">
