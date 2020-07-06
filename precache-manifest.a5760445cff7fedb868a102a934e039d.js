@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "acd64b55a4af3d255710f0313a7243f8",
+    "revision": "23f3f0c47716b5e282eea203792e9528",
     "url": "/bosa-noga-frontend/index.html"
   },
   {
-    "revision": "af1836a2dc753559fcc7",
+    "revision": "6905dd062944737e974e",
     "url": "/bosa-noga-frontend/static/css/main.c8b32d61.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bosa-noga-frontend/static/js/2.9a467da9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af1836a2dc753559fcc7",
-    "url": "/bosa-noga-frontend/static/js/main.a93012c9.chunk.js"
+    "revision": "6905dd062944737e974e",
+    "url": "/bosa-noga-frontend/static/js/main.7676fcf3.chunk.js"
   },
   {
     "revision": "65eaf0aa50ec86a4b0e2",
