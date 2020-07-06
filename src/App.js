@@ -15,6 +15,7 @@ import GlobalProvider from "./contexts/GlobalProvider";
 function App() {
   return (
     <Router>
+      <Redirect from='/bosa-noga-frontend' to='/' ></Redirect>
       <GlobalProvider>
         <Header />
         <Main>
@@ -34,7 +35,6 @@ function App() {
             <Route path="/cart">
               <CartPage />
             </Route>
-            <Redirect from='/bosa-noga-frontend' to='/' >
             <Route exact path="/">
               <HomePage />
             </Route>
