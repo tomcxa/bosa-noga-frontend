@@ -47,7 +47,6 @@ const GlobalProvider = ({ children }) => {
 
   function addToCart(item) {
     setCart((prev) => {
-      console.log(prev)
       const { items } = prev;
       const index = items.findIndex(
         (o) => o.id === item.id && o.size === item.size
