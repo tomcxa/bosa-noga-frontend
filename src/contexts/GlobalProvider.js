@@ -56,7 +56,6 @@ const GlobalProvider = ({ children }) => {
     } else {
       items.push(item);
     }
-    console.log(items);
     setCart({ items });
   }
 
