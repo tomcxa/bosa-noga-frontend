@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bosa-noga-frontend/precache-manifest.360d1da774ae4f62193cfe31f2afcf67.js"
+  "/bosa-noga-frontend/precache-manifest.874f2cd4d262e5a3791a0920b88c63c6.js"
 );
 
 self.addEventListener('message', (event) => {

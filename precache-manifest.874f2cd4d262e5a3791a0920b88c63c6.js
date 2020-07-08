@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "485268069c253051cfe41a4c711f953d",
+    "revision": "492406485f57fac16b5421afb0111bb5",
     "url": "/bosa-noga-frontend/index.html"
   },
   {
-    "revision": "823d40b5dbff1b985148",
+    "revision": "51d1148c5e8d764cb3f3",
     "url": "/bosa-noga-frontend/static/css/main.c8b32d61.chunk.css"
   },
   {
-    "revision": "669ad78c5a5d92f43be7",
-    "url": "/bosa-noga-frontend/static/js/2.9a467da9.chunk.js"
+    "revision": "1568d67cb982209a1b62",
+    "url": "/bosa-noga-frontend/static/js/2.66c4205f.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/bosa-noga-frontend/static/js/2.9a467da9.chunk.js.LICENSE.txt"
+    "url": "/bosa-noga-frontend/static/js/2.66c4205f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "823d40b5dbff1b985148",
-    "url": "/bosa-noga-frontend/static/js/main.bc0d462f.chunk.js"
+    "revision": "51d1148c5e8d764cb3f3",
+    "url": "/bosa-noga-frontend/static/js/main.d0d864d9.chunk.js"
   },
   {
     "revision": "65eaf0aa50ec86a4b0e2",
