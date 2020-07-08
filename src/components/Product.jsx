@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext, useRef } from "react";
-import { useParams, useRouteMatch, useHistory } from "react-router-dom";
+import React, { useState, useContext, useCallback } from "react";
+import { useParams, useHistory } from "react-router-dom";
 import { useAsyncRetry } from "react-use";
 import Loader from "./Loader";
 import GlobalContext from "../contexts/GlobalContext";
@@ -16,9 +16,12 @@ const setSelectedClass = (selected, current) => {
 
 const Product = () => {
   const { id } = useParams();
-  const { path } = useRouteMatch();
   const history = useHistory();
-  const productRef = useRef(null);
+  const productRef = useCallback(node => {
+    if (node !== null) {
+      node.scrollIntoView(true)
+    }
+  }, []);
   const [selectedSize, setSize] = useState("");
   const [count, setCount] = useState(1);
   const [imgError, setImgError] = useState(false)
@@ -28,12 +31,6 @@ const Product = () => {
     return result;
   });
   const { addToCart } = useContext(GlobalContext);
-
-  useEffect(() => {
-    if (path === `/product/${id}`) {
-      setTimeout(() => productRef.current.scrollIntoView(true), 200);
-    }
-  }, [path, id]);
 
   function selectSize(size) {
     setSize(size);
@@ -77,7 +74,7 @@ const Product = () => {
   if (state.error) return <RetryButton retry={state.retry} />;
 
   return (
-    <section ref={productRef} id='product' className="catalog-item">
+    <section ref={productRef} className="catalog-item">
       <h2 className="text-center">{state.value?.title}</h2>
       <div className="row">
         <div className="col-5">

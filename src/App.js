@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import CatalogPage from "./pages/CatalogPage";
 import HomePage from "./pages/HomePage";
@@ -14,8 +14,7 @@ import GlobalProvider from "./contexts/GlobalProvider";
 
 function App() {
   return (
-    <Router>
-      <Redirect from='/bosa-noga-frontend' to='/' />
+    <Router basename="/bosa-noga-frontend">
       <GlobalProvider>
         <Header />
         <Main>

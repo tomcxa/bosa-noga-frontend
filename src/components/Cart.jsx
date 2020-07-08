@@ -1,42 +1,41 @@
-import React, {
-  useContext,
-  useRef,
-  useEffect,
-} from "react";
-import { useHistory, useRouteMatch } from "react-router-dom";
+import React, { useContext, useCallback, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import GlobalContext from "../contexts/GlobalContext";
 import CartItem from "./CartItem";
 import OrderForm from "./OrderForm";
 import Loader from "./Loader";
 
-
-
 const Cart = () => {
   const history = useHistory();
-  const { path } = useRouteMatch();
-  const cartRef = useRef(null);
-  const { changeAnchors, cart, remove, orderStatus, orderStatusChange } = useContext(GlobalContext);
-
-  useEffect(() => {
-    if (path === "/cart") cartRef.current.scrollIntoView(true);
-  }, [path]);
+  const {
+    changeAnchors,
+    cart,
+    remove,
+    orderStatus,
+    orderStatusChange,
+  } = useContext(GlobalContext);
+  const cartRef = useCallback((node) => {
+    if (node !== null) {
+      node.scrollIntoView(true);
+    }
+  }, []);
 
   useEffect(() => {
     if (orderStatus.success) {
-      remove()
+      remove();
     }
-  }, [orderStatus.success, orderStatusChange, remove])
+  });
 
   function handleToCatalog(event) {
     event.preventDefault();
     changeAnchors({ q: "", categoryId: "", offset: 0 });
-    orderStatusChange({success: false})
+    orderStatusChange({ success: false });
     history.push("/catalog");
   }
 
   function handleToCart(event) {
     event.preventDefault();
-    orderStatusChange({error: false})
+    orderStatusChange({ error: false });
   }
 
   function removeHandler() {

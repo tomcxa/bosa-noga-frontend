@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
-import { useRouteMatch } from "react-router-dom";
+import React, { useState, useEffect, useContext, useCallback } from "react";
 import { useAsyncRetry } from "react-use";
 import GlobalContext from "../contexts/GlobalContext";
 import CatalogCategories from "./CatalogCategories";
 import CatalogCardList from "./CatalogCardList";
+import { useRouteMatch } from "react-router-dom";
 
 function getUrl({ categoryId, offset, q }) {
   let url = `${process.env.REACT_APP_API_URL}/items`;
@@ -49,14 +49,12 @@ const Catalog = ({ children }) => {
     const result = await response.json();
     return result
   }, [url]);
-  const catalogRef = useRef(null);
-  const { path } = useRouteMatch();
-
-  useEffect(() => {
-    if (path === '/catalog') {
-      setTimeout(() => catalogRef.current.scrollIntoView(true), 0)
+  const {path} = useRouteMatch();
+  const catalogRef = useCallback(node => {
+    if (node !== null && path === '/catalog') {
+      node.scrollIntoView(true)
     }
-  }, [path])
+  }, [path]);
 
   //обнуляем каталог если изменилась категория или поисковый запрос
   useEffect(() => {
