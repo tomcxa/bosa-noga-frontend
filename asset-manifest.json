@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bosa-noga-frontend/static/css/main.c8b32d61.chunk.css",
-    "main.js": "/bosa-noga-frontend/static/js/main.d0d864d9.chunk.js",
-    "main.js.map": "/bosa-noga-frontend/static/js/main.d0d864d9.chunk.js.map",
+    "main.js": "/bosa-noga-frontend/static/js/main.59d4d6af.chunk.js",
+    "main.js.map": "/bosa-noga-frontend/static/js/main.59d4d6af.chunk.js.map",
     "runtime-main.js": "/bosa-noga-frontend/static/js/runtime-main.bb0e3bb9.js",
     "runtime-main.js.map": "/bosa-noga-frontend/static/js/runtime-main.bb0e3bb9.js.map",
     "static/js/2.66c4205f.chunk.js": "/bosa-noga-frontend/static/js/2.66c4205f.chunk.js",
     "static/js/2.66c4205f.chunk.js.map": "/bosa-noga-frontend/static/js/2.66c4205f.chunk.js.map",
     "index.html": "/bosa-noga-frontend/index.html",
-    "precache-manifest.874f2cd4d262e5a3791a0920b88c63c6.js": "/bosa-noga-frontend/precache-manifest.874f2cd4d262e5a3791a0920b88c63c6.js",
+    "precache-manifest.a31f0f8fe18917b96333c1c87c963e10.js": "/bosa-noga-frontend/precache-manifest.a31f0f8fe18917b96333c1c87c963e10.js",
     "service-worker.js": "/bosa-noga-frontend/service-worker.js",
     "static/css/main.c8b32d61.chunk.css.map": "/bosa-noga-frontend/static/css/main.c8b32d61.chunk.css.map",
     "static/js/2.66c4205f.chunk.js.LICENSE.txt": "/bosa-noga-frontend/static/js/2.66c4205f.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.bb0e3bb9.js",
     "static/js/2.66c4205f.chunk.js",
     "static/css/main.c8b32d61.chunk.css",
-    "static/js/main.d0d864d9.chunk.js"
+    "static/js/main.59d4d6af.chunk.js"
   ]
 }
